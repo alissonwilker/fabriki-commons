@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- PAGE settings -->
+  <link rel="shortcut icon" href="#{resource['/favicon/favicon.ico']}"/>
+  <title>Fabriki - Aprender Fazendo!</title>
+  <meta name="description" content="Descrição do Fabriki"/>
+  <meta name="keywords" content="fabriki"/>
+  <meta name="author" content="Franklin Lima"/>
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="#{resource['/css/wireframe.css']}" />
+  <style>
+	@font-face {
+	    font-family: Nanami-Regular;
+	    src: url("nanami/Nanami-Regular.otf") format("opentype");
+	}
+  	@font-face {
+    	font-family: Nanami-3D-Medium;
+    	src: url("nanami_3d/Nanami-3D-Medium.otf") format("opentype");
+	}
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-bottom">
+    <div class="container"> <a class="navbar-brand" href="#">
+        <i class="fa d-inline fa-lg fa-circle-o"></i>
+        <b> Sucesso e bons códigos!</b>
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+        <ul class="navbar-nav mr-auto"></ul>
+        <a onclick="window.location.href='Login?redirect_path=estudos.xhtml'" class="btn navbar-btn ml-md-2 btn-md btn-success" style="width: 200px; border: 1px solid white;"><strong>Entrar</strong></a>
+      </div>
+    </div>
+  </nav>
+  <div class="h-30 d-flex align-items-center bg-info" style="	background-image: url(&quot;https://pingendo.com/site-assets/cover.jpg&quot;);	background-position: cover; background-attachment: fixed;	background-size: 100%;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto text-center col-md-6">
+<!--           <img class="img-fluid d-block" src="#{resource['/img/logo.svg']}"/> -->
+			  <div class="img-fluid d-block" style="font-family:Nanami-Regular;font-size:96px;color:white;">Fabriki</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="">
+          <img class="img-fluid d-block mx-auto" src="#{resource['/img/cap.svg']}" width="100px"/>
+          <h1 class="text-center"><b>Seja bem-vindo!</b></h1>
+          <p class="lead text-center">O Fabriki é uma plataforma educacional que contém estudos dirigidos para o aprendizado de linguagem de programação. O nosso lema é 'aprender fazendo!', então aqui você vai encontrar diversos exercícios organizados de forma a guiá-lo do básico ao avançado em seus estudos.</p>
+          <p class="text-center mt-3"><a href="#mais"><i class="fa fa-chevron-circle-down fa-fw fa-1x py-1 bounce" style="color: #127696; font-size: 56px;"></i></a></p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div id="mais" class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 rounded bg-danger p-4">
+          <img class="img-fluid d-block mx-auto my-1" src="#{resource['/img/ranking.svg']}" width="100
+px"/>
+          <h4 class="text-center text-light"><b>Do Básico ao Avançado</b></h4>
+          <p class="text-center">Estudos dirigidos organizados em módulos.</p>
+          <p class="text-center">Um software funcional desenvolvido por você ao longo do estudo (o método é nosso, o mérito é seu).</p>
+        </div>
+        <div class="col-lg-4 col-md-6 bg-warning p-4">
+          <img class="img-fluid d-block mx-auto my-1" src="#{resource['/img/presentation.svg']}" width="100
+px"/>
+          <h4 class="text-center text-light"><b>Feedback Instantâneo</b></h4>
+          <p class="text-center text-light">Exercícios e projetos validados automaticamente.</p>
+          <p class="text-center text-light">Suporte do instrutor a qualquer momento (acompanhamento individual).</p>
+        </div>
+        <div class="p-4 col-lg-4 bg-success">
+          <img class="img-fluid d-block mx-auto my-1" src="#{resource['/img/shield.svg']}" width="100
+px"/>
+          <h4 class="text-center text-light"><b>Segurança nos Fundamentos</b></h4>
+          <p class="text-center text-light">Avanço para o módulo seguinte mediante avaliação (avance quando tiver segurança nos fundamentos do módulo anterior).</p>
+        </div>
+      </div>
+      <p class="text-center mt-3"><a href="#maismais"><i class="fa fa-chevron-circle-down fa-fw fa-1x py-1 bounce" style="color: #127696; font-size: 56px;"></i></a></p>
+    </div>
+  </div>
+  <div id="maismais" class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex flex-column align-items-start justify-content-center">
+          <div class="col-md-12 text-center mx-auto">
+            <h1><b>Comece já!</b></h1>
+            <p class="lead mb-4 text-left">Para começar a usufruir da plataforma Fabriki, você vai precisar:</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-left"><i class="fa fa-arrow-circle-right text-primary mr-2" style="color: #44bd32 !important;"></i>Ter uma conta de usuário em <a href="http://github.com/">GitHub.com</a></li>
+              <li class="list-group-item text-left"><i class="fa fa-arrow-circle-right text-primary mr-2" style="color: #44bd32 !important;"></i>Autorizar o Fabriki a acessar sua conta do GitHub.</li>
+              <li class="list-group-item text-left" style="font-size: 80%">* Clique em 'Entrar' para acessar ou criar sua conta no GitHub.com. Em seguida, digite seu usuário e senha (se já possuir uma conta), ou clique em 'Create an account' para criar uma nova conta. Por fim, autorize o acesso do Fabriki a sua conta do GitHub.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6"> <img class="img-fluid d-block" src="#{resource['/img/technology.svg']}"/> </div>
+      </div>
+      <p class="text-center mt-3"><a href="#"><i class="fa fa-chevron-circle-up fa-fw fa-1x py-1 bounce" style="color: #127696; font-size: 56px;"></i></a></p>
+    </div>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
