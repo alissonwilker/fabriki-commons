@@ -6,3 +6,6 @@
 .factorypath
 .env
 target/
+/build/
+/bin/
+MANIFEST.MF

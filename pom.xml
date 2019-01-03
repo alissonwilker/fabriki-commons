@@ -8,21 +8,6 @@
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-api -->
-		<dependency>
-			<groupId>com.sun.faces</groupId>
-			<artifactId>jsf-api</artifactId>
-			<version>${jsf.version}</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-impl -->
-		<dependency>
-			<groupId>com.sun.faces</groupId>
-			<artifactId>jsf-impl</artifactId>
-			<version>${jsf.version}</version>
-		</dependency>
-	</dependencies>
-
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -55,9 +40,6 @@
 
 		<!-- propriedades do projeto -->
 		<project.resourcesdir>${project.basedir}/src/main/resources</project.resourcesdir>
-
-		<!-- versoes das dependencias -->
-		<jsf.version>2.2.14</jsf.version>
 
 		<!-- versoes dos plugins -->
 		<maven-compiler.version>3.5.1</maven-compiler.version>
